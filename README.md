@@ -2,4 +2,9 @@
 
 PyMatGen rebuilds a full phase diagram per entry (Python loops + QHull). This implementation builds the LP matrix once per chemical system, solves with the HiGHS C++ LP solver (not QHull), uses NumPy BLAS matrix multiply for formation energies, dispatches whole systems to 16 parallel workers, and writes Parquet output — making 2 million Ehull calculations practical in minutes instead of days.
 
+
 <img width="1707" height="1062" alt="image" src="https://github.com/user-attachments/assets/395fb8ea-3cd9-48cb-8d88-793a6b78293b" />
+
+## 🌐 Interactive Schematic
+👉 [View Algorithm Visualization](https://asif-iqbal-bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/)
+
