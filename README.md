@@ -1,6 +1,6 @@
 #  Ultra-Fast Energy-Above-Hull via Linear Programming (HiGHS C++)
 
-> **Optimised for High-Entropy Disordered Rock-Salt (HE-DRX) cathode screening — scales to ≥ 2 million entries on a 16-CPU workstation.**
+> **Optimised for High-Entropy Disordered Rock-Salt (HE-DRX) cathode screening — scales to ≥ 2 million entries on a workstation.**
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
