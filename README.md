@@ -158,15 +158,11 @@ If you use this code in your research, please cite:
   title     = {Ultra-Fast Energy-Above-Hull via LP (HiGHS C++) for HE-DRX Cathode Screening},
   year      = {2025},
   url       = {https://github.com/Asif-Iqbal-Bhatti/Ultra-fast-Hull-Energy-via-LP},
-  note      = {VUB FULMAP Group}
 }
 ```
 
 ---
 
-## 🏛️ Affiliation
-
-**VUB FULMAP Group** — Vrije Universiteit Brussel  
 High-Entropy DRX Cathode Design Space Calculation
 
 ---
