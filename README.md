@@ -1,4 +1,4 @@
-# ⚡ Ultra-Fast Energy-Above-Hull via Linear Programming (HiGHS C++)
+#  Ultra-Fast Energy-Above-Hull via Linear Programming (HiGHS C++)
 
 > **Optimised for High-Entropy Disordered Rock-Salt (HE-DRX) cathode screening — scales to ≥ 2 million entries on a 16-CPU workstation.**
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 🌐 Interactive Algorithm Schematic
+## 🌐 Algorithm Schematic
 
 👉 **[View the full interactive pipeline visualization](https://asif-iqbal-bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/)**
 
@@ -17,7 +17,7 @@
 
 ## 🔬 What is this?
 
-This code computes the **energy above the convex hull (Ehull)** — the key thermodynamic stability metric — for millions of DFT-relaxed high-entropy oxide compositions in the 19-element chemical space:
+This code computes the **energy above the convex hull (Ehull)** — the key thermodynamic stability metric — for millions of DFT-relaxed high-entropy oxide compositions in the n-element chemical space:
 
 ```
 Li · Al · Co · Cr · F · Fe · Ga · Mg · Mn · Mo · Nb · Ni · O · Sb · Sn · Ti · V · Zn · Zr
