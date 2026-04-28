@@ -19,10 +19,6 @@
 
 This code computes the **energy above the convex hull (Ehull)** — the key thermodynamic stability metric — for millions of DFT-relaxed high-entropy oxide compositions in the n-element chemical space:
 
-```
-Li · Al · Co · Cr · F · Fe · Ga · Mg · Mn · Mo · Nb · Ni · O · Sb · Sn · Ti · V · Zn · Zr
-```
-
 Standard PyMatGen tools (`PhaseDiagram`, `PatchedPhaseDiagram`) become prohibitively slow at this scale. This implementation replaces QHull-based convex hull construction with **direct Linear Programming (LP)** via the HiGHS C++ solver — combined with vectorisation, system-level batching, and MPI parallelism.
 
 ---
