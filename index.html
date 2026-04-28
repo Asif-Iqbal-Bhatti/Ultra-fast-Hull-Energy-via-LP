@@ -3,28 +3,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Ultra-fast Ehull via LP — Demo</title>
+  <title>Ultra-fast Ehull via LP</title>
+  <meta name="description" content="Ultra-fast Ehull via LP (HiGHS C++) — repository landing page and quick-start." />
+  <meta property="og:title" content="Ultra-fast Ehull via LP" />
+  <meta property="og:description" content="Ultra-fast Ehull via LP (HiGHS C++) — repository landing page and quick-start." />
+  <meta property="og:url" content="https://Asif-Iqbal-Bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/" />
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5;margin:0;display:flex;align-items:center;justify-content:center;min-height:100vh;background:#f6f8fa;color:#0b1220}
-    .card{max-width:720px;margin:24px;padding:28px;border-radius:12px;background:#fff;box-shadow:0 6px 24px rgba(11,18,32,0.08)}
-    a{color:#0366d6}
-    footer{margin-top:18px;color:#6a737d;font-size:0.9rem}
+    :root{--bg:#0f1720;--card:#0b1220;--muted:#94a3b8;--accent:#38bdf8;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#e6eef6;background:linear-gradient(180deg,#071021 0%,#0b1220 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:14px;padding:28px;box-shadow:0 8px 30px rgba(2,6,23,0.6);backdrop-filter: blur(6px)}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#06202a}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{color:var(--muted);margin-top:8px}
+    .badges{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+    a.btn{display:inline-flex;gap:10px;align-items:center;padding:10px 14px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--accent);text-decoration:none;font-weight:600}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:20px}
+    .section{margin-top:18px}
+    pre{background:var(--card);padding:12px;border-radius:8px;overflow:auto;color:#bfeafe}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+    footer{margin-top:20px;color:var(--muted);font-size:0.9rem}
+    .meta{font-size:0.95rem;color:var(--muted);display:flex;flex-direction:column;gap:8px}
+    .meta .card-mini{background:var(--glass);padding:12px;border-radius:10px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.container{margin:16px}}
+    .copy{cursor:pointer;border:0;background:#0a2540;padding:8px 10px;border-radius:8px;color:#cfeffd}
   </style>
 </head>
 <body>
-  <main class="card">
-    <h1>Ultra-fast Ehull via LP</h1>
-    <p>This repository contains code for "Ultra-fast Ehull via LP (HiGHS C++)". A simple demo site has been published to the <code>gh-pages</code> branch so you can view a static landing page for the project.</p>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="logo">EH</div>
+        <div>
+          <h1>Ultra-fast Ehull via LP</h1>
+          <p class="lead">HiGHS C++ implementation — linear-programming approach to compute Ehull (energy hull) quickly. This is a static landing page published from the gh-pages branch.</p>
+          <div class="badges">
+            <a class="btn" href="https://github.com/Asif-Iqbal-Bhatti/Ultra-fast-Hull-Energy-via-LP">View on GitHub</a>
+            <a class="btn" href="https://Asif-Iqbal-Bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/">Open site</a>
+          </div>
+        </div>
+      </header>
 
-    <p>Repository: <a href="https://github.com/Asif-Iqbal-Bhatti/Ultra-fast-Hull-Energy-via-LP">Asif-Iqbal-Bhatti/Ultra-fast-Hull-Energy-via-LP</a></p>
+      <div class="grid">
+        <main>
+          <section class="section">
+            <h2>Quick start</h2>
+            <p class="lead">Clone, build, and run. The following commands assume you have a C++ toolchain and HiGHS available (or installed via your package manager).</p>
+            <pre><code id="cloneCmd">git clone https://github.com/Asif-Iqbal-Bhatti/Ultra-fast-Hull-Energy-via-LP.git
+cd Ultra-fast-Hull-Energy-via-LP
+# build instructions (example)
+mkdir build && cd build
+cmake ..
+cmake --build . --config Release
+</code></pre>
+            <div style="margin-top:8px;"><button class="copy" onclick="copyClone()">Copy clone + build commands</button></div>
+          </section>
 
-    <p>Live site (should be available within a minute):<br>
-      <a href="https://Asif-Iqbal-Bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/">https://Asif-Iqbal-Bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/</a>
-    </p>
+          <section class="section">
+            <h2>About</h2>
+            <p class="lead">This repository implements a very fast method to compute the energy hull (Ehull) using linear programming solvers such as HiGHS. Use this page as a quick link hub to the repo and instructions.</p>
+            <ul>
+              <li>Author: Asif Iqbal Bhatti</li>
+              <li>Language: C++ (HiGHS-based LP)</li>
+              <li>Purpose: fast computation of Ehull for materials/energy analysis</li>
+            </ul>
+          </section>
 
-    <footer>
-      If you want different content, paste your HTML and I will replace index.html. To use a custom domain or automate publishing, tell me and I can add a workflow or CNAME file.
-    </footer>
-  </main>
+          <section class="section">
+            <h2>Usage example</h2>
+            <p class="lead">After building, run the executable (example name used here: <code>ehull</code>) passing input data as required by the repo's tools.</p>
+            <pre><code>// example
+./ehull --input examples/sample_data.json --output results/ehull.json
+</code></pre>
+          </section>
+
+          <section class="section">
+            <h2>Files</h2>
+            <ul>
+              <li><strong>src/</strong> — C++ source files</li>
+              <li><strong>CMakeLists.txt</strong> — build configuration</li>
+              <li><strong>examples/</strong> — example inputs and usage</li>
+            </ul>
+          </section>
+
+        </main>
+
+        <aside class="meta">
+          <div class="card-mini">
+            <strong>Repository</strong>
+            <div><a href="https://github.com/Asif-Iqbal-Bhatti/Ultra-fast-Hull-Energy-via-LP">Asif-Iqbal-Bhatti/Ultra-fast-Hull-Energy-via-LP</a></div>
+          </div>
+
+          <div class="card-mini">
+            <strong>Live URL</strong>
+            <div><a href="https://Asif-Iqbal-Bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/">https://Asif-Iqbal-Bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/</a></div>
+          </div>
+
+          <div class="card-mini">
+            <strong>License</strong>
+            <div>See repository LICENSE file (if present)</div>
+          </div>
+
+          <div class="card-mini">
+            <strong>Contact</strong>
+            <div><a href="https://github.com/Asif-Iqbal-Bhatti">@Asif-Iqbal-Bhatti</a></div>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        <small>Published automatically to the <code>gh-pages</code> branch. Modify <code>index.html</code> on that branch to change this page.</small>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function copyClone(){
+      const text = document.getElementById('cloneCmd').innerText;
+      navigator.clipboard?.writeText(text).then(()=>{
+        alert('Commands copied to clipboard');
+      }).catch(()=>{ prompt('Copy these commands', text); });
+    }
+  </script>
 </body>
 </html>
