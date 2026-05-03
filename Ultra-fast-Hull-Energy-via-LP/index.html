@@ -6,16 +6,39 @@
     <title>Ultra-fast Hull Energy via LP</title>
     <meta name="description" content="Ultra-fast Ehull via LP (HiGHS C++)" />
     <style>
-      body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.6; padding: 2rem; }
-      header { border-bottom: 1px solid #eee; margin-bottom: 1rem; }
-      h1 { font-size: 1.6rem; }
-      pre { background:#f6f8fa; padding:1rem; border-radius:6px; overflow:auto }
+      body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.6; padding: 2rem; color:#111 }
+      header { border-bottom: 1px solid #eee; margin-bottom: 1rem; display:flex; gap:1rem; align-items:center }
+      h1 { font-size: 1.6rem; margin:0 }
+      p.repo { margin:0; color:#555 }
+      figure.logo { margin:0; width:200px; height:70px }
+      figure.logo svg { width:100%; height:100%; display:block }
+      .note { background:#f6f8fa; padding:1rem; border-radius:6px; margin-top:1rem }
+      footer { margin-top:2rem; color:#666 }
     </style>
   </head>
   <body>
     <header>
-      <h1>Ultra-fast Hull Energy via LP</h1>
-      <p>Repository: Asif-Iqbal-Bhatti / FULLMAP</p>
+      <figure class="logo" aria-hidden="true">
+        <!-- Inline SVG ensures an image is always visible without external files -->
+        <svg viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FULLMAP logo">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#0066ff" />
+              <stop offset="1" stop-color="#00cc88" />
+            </linearGradient>
+          </defs>
+          <rect width="100%" height="100%" rx="8" fill="#0f1720" />
+          <g transform="translate(16,20)">
+            <circle cx="36" cy="36" r="28" fill="url(#g)" />
+            <text x="76" y="50" fill="#fff" font-family="Segoe UI, Roboto, Arial" font-size="28" font-weight="600">FULLMAP</text>
+          </g>
+        </svg>
+      </figure>
+
+      <div>
+        <h1>Ultra-fast Hull Energy via LP</h1>
+        <p class="repo">Repository: Asif-Iqbal-Bhatti / FULLMAP</p>
+      </div>
     </header>
 
     <main>
@@ -27,12 +50,26 @@
       </section>
 
       <section>
+        <h2>Images and why they might not appear</h2>
+        <p>If you opened the HTML file from the GitHub repository page (the file viewer), the browser will not render the page as a normal website and some image references may not load. To see images correctly, do one of the following:</p>
+        <ul>
+          <li>Open the raw HTML page in your browser using the raw URL: <code>https://raw.githubusercontent.com/Asif-Iqbal-Bhatti/FULLMAP/main/Ultra-fast-Hull-Energy-via-LP/index.html</code></li>
+          <li>Enable GitHub Pages in the repository settings and serve the site from the repository (recommended for a real site).</li>
+          <li>Use an <strong>inline image</strong> or an image stored in the same folder and referenced with a correct relative path (e.g. <code>&lt;img src="./image.png"&gt;</code>). This file already includes an inline SVG logo so you should always see an image at the top.</li>
+        </ul>
+
+        <div class="note">
+          Tip: If you add image files to the repo (for example <code>Ultra-fast-Hull-Energy-via-LP/image.png</code>), reference them with a relative path in this HTML: <code>&lt;img src="./image.png" alt="..."&gt;</code>. When testing locally, open the file via a static server or use the raw GitHub URL. GitHub's file preview will not show the page as a hosted website.
+        </div>
+      </section>
+
+      <section>
         <h2>Usage</h2>
-        <p>Replace this file with your HTML content. To view, open <code>Ultra-fast-Hull-Energy-via-LP/index.html</code> in a browser or serve the repo with a static server.</p>
+        <p>Replace this file with your HTML content. To view rendered HTML and images in a browser, open the raw URL above or enable GitHub Pages.</p>
       </section>
 
       <footer>
-        <p>Generated on 2026-05-03 by automated repository tooling.</p>
+        <p>Updated on 2026-05-03 by automated repository tooling.</p>
       </footer>
     </main>
   </body>
