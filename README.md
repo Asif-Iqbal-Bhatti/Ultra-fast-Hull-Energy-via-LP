@@ -10,8 +10,8 @@
 ---
 
 ## 🌐 Algorithm Schematic
+<img width="1751" height="1310" alt="image" src="https://github.com/user-attachments/assets/6c1933bf-191f-4ec0-b061-538404b5e21d" />
 
-👉 **[View the full interactive pipeline visualization](https://asif-iqbal-bhatti.github.io/Ultra-fast-Hull-Energy-via-LP/)**
 
 ---
 
